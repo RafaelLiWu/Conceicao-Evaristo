@@ -1,1 +1,1 @@
-# Conceicao-Evaristo
+Biografia de Conceição Evaristo, apenas para estudos acadêmicos.

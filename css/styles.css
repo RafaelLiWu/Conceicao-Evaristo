@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.obras-sliders-inner, .escrevivencia, .biografia--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.home {
+  background-image: url("../assets/4k.jpeg");
+  width: 100%;
+  height: 95vh;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 10em black;
+}
+.home--texto {
+  color: white;
+  text-shadow: 0 3px 1px black;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.biografia--container {
+  padding: 40px 0 40px 0;
+}
+.biografia--container--texto {
+  flex: 1;
+  padding: 10px 20px 30px 0;
+}
+.biografia--container--imagem {
+  width: 320px;
+}
+
+.more {
+  margin: 50px auto 50px auto;
+}
+.more-texto {
+  flex: 1;
+  padding: 10px 10px 10px 0;
+}
+.more-info {
+  width: 400px;
+  padding: 0 7px;
+}
+
+.escrevivencia-title {
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+.escrevivencia {
+  padding: 30px 0 30px 0;
+}
+.escrevivencia-texto {
+  flex: 1;
+}
+.escrevivencia-img {
+  width: 400px;
+  padding: 20px;
+}
+
+.obras-title {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.obras-sliders-inner {
+  overflow: hidden;
+}
+.obras-sliders-inner-item {
+  width: 300px;
+  height: 451px;
+}
+.obras-buttons {
+  margin: 50px 0;
+}
+.obras-buttons ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.obras-buttons ul li {
+  cursor: pointer;
+}
+
+@media (max-width: 970px) {
+  .biografia--container {
+    flex-direction: column;
+  }
+
+  .more {
+    flex-direction: column-reverse;
+    margin: 0px auto 0px auto;
+  }
+  .more-info {
+    margin: auto;
+    width: auto;
+    margin-bottom: 30px;
+  }
+
+  .escrevivencia-title {
+    margin: 30px 0 0 0;
+  }
+
+  .escrevivencia {
+    flex-direction: column;
+    padding-top: 0px;
+  }
+  .escrevivencia-img {
+    width: auto;
+    padding: 20px 0 20px 0;
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

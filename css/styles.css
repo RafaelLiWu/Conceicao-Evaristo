@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.obras-sliders-inner, .escrevivencia, .biografia--container {
+.obras-buttons ul, .obras, .escrevivencia, .biografia--container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,18 +84,32 @@
   font-weight: bolder;
 }
 
-.obras-sliders-inner {
-  overflow: hidden;
+.obras {
+  flex-direction: column;
 }
-.obras-sliders-inner-item {
+.obras-sliders {
+  display: flex;
   width: 300px;
   height: 451px;
+  overflow: hidden;
+}
+.obras-sliders-inner {
+  display: flex;
+  width: 300px;
+  transition: 0.9s;
+}
+.obras-sliders-inner-item {
+  width: inherit;
+  height: inherit;
+}
+.obras-sliders-inner-item img {
+  display: block;
+  width: inherit;
 }
 .obras-buttons {
   margin: 50px 0;
 }
 .obras-buttons ul {
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }

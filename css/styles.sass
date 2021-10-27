@@ -7,7 +7,7 @@
     display: flex
     justify-content: center
     align-items: center
-    
+
 %u-display-align-end
     display: flex
     justify-content: center
@@ -21,8 +21,6 @@
 %u-img-centered
     object-fit: cover
     object-position: center
-
-
 
 .home
     background-image: url("../assets/4k.jpeg")
@@ -40,7 +38,6 @@
         margin-bottom: 30px
         text-align: center
 
-
 .biografia
     &--container
         @extend %u-display-centered
@@ -53,7 +50,6 @@
         &--imagem
             width: 320px
 
-
 .more
     @extend %u-display-align-start
     margin: 50px auto 50px auto
@@ -65,11 +61,9 @@
         width: 400px
         padding: 0 7px
 
-
 .escrevivencia-title
     font-size: 50px
     font-family: sans-serif
-
 
 .escrevivencia
     padding: 30px 0 30px 0
@@ -88,32 +82,40 @@
     font-size: 30px
     font-weight: bolder
 
-
 .obras
+    @extend %u-display-centered
+    flex-direction: column
     &-sliders
-        &-inner
-            overflow: hidden
-            @extend %u-display-centered
-            &-item
-                width: 300px
-                height: 451px
+        display: flex
+        width: 300px
+        height: 451px
+        overflow: hidden
 
+        &-inner
+            display: flex
+            width: 300px
+            transition: .9s
+
+            &-item
+                width: inherit
+                height: inherit
+
+                & img
+                    display: block
+                    width: inherit
 
     &-buttons
         margin: 50px 0
         & ul
-            display: flex
+            @extend %u-display-centered
             flex-direction: row
             flex-wrap: wrap
-            & li 
+            & li
                 cursor: pointer
-
-
-
 
 @media ( max-width: 970px )
     .biografia
-        &--container 
+        &--container
             flex-direction: column
     .more
         flex-direction: column-reverse
@@ -135,4 +137,3 @@
             width: auto
             padding: 20px 0 20px 0
             margin: auto
-

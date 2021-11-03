@@ -1,0 +1,92 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html 
+    scroll-behavior: smooth
+
+.body
+    overflow-x: hidden
+
+
+%u-display-centered
+    display: flex
+    justify-content: center
+    align-items: center
+
+%u-display-space-around
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+%u-display-space-between
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.obra-p
+    margin: 15px
+    min-height: 100vh
+    @extend %u-display-centered
+
+    &-area
+        width: 100%
+        background: linear-gradient(#ec00ff, #5d1cff)
+        box-shadow: -2px 3px 1rem #5d1cff
+        min-height: 500px
+        @extend %u-display-space-around
+        flex-wrap: wrap
+        padding: 15px
+
+        &-img
+            min-width: 250px
+
+        &-text
+            max-width: 520px
+            padding: 12px 10px
+            text-align: center
+            line-height: 25px
+
+            & p.title
+                font-size: 32px
+                text-shadow: -1px 0 1rem black
+                font-weight: bolder
+
+    &-area-agua
+        width: 100%
+        background: linear-gradient(to top, #e2fff7, #ffffff)
+        box-shadow: -2px 5px 1rem #bbbbbb
+        min-height: 500px
+        @extend %u-display-space-around
+        flex-wrap: wrap
+        padding: 15px
+
+    &-area-becos
+        width: 100% 
+        background: rgb(242,155,84)
+        background: linear-gradient(90deg, rgba(242,155,84,1) 0%, rgba(241,143,62,1) 22%, rgba(246,138,49,1) 44%, rgba(253,145,29,1) 58%, rgba(252,176,69,1) 100%)
+        box-shadow: -2px 5px 1rem #f39f67
+        min-height: 500px
+        @extend %u-display-space-around
+        flex-wrap: wrap
+        padding: 15px
+
+@media ( max-width: 400px )
+    .obra-p-area-img
+        height: 250px
+        display: flex
+        justify-content: center
+    
+
+
+        & img
+            height: inherit
+
+@media ( max-width: 990px )
+    .obra-p
+        margin: 30px 0
+
+    .obra-p-area-text
+        text-align: start
+        margin-top: 12px
